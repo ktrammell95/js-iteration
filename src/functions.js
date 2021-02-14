@@ -57,14 +57,12 @@ function doubleTrouble(array) {
  *
  */
 
-// function stringyIndexes(array) {
-//   const logSomeColor = function(currentColor, colorIndex) {
-//     console.log(`The color at index ${colorIndex} is ${currentColor}`)
-//   }
-// }
-
-// arrayOfStrings = ['How', 'now', 'brown', 'cow']
-// stringyIndexes(arrayOfStrings)
+function stringyIndexes(array) {
+  const arrayMapped = array.map(function(word, index) {
+    return `${word} is at index ${index}`
+  })
+  return arrayMapped
+}
 
 /*
  * 4) Define a function onlyTheEvenSurvive that accepts an array of
