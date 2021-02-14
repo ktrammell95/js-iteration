@@ -153,7 +153,13 @@ function findTheNeedle(sentence) {
  *
  */
 
-// ...
+function findTheNeedleIndex(sentence) {
+  const containsWord = sentence.findIndex(sentence =>
+    sentence.includes('needle')
+  )
+
+  return containsWord
+}
 
 /*
  *` 10)  Define a function someoneToLove that accepts an array of
