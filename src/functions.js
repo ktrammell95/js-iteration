@@ -125,9 +125,8 @@ function bestMoviesOfTheYear(movies, year) {
  */
 
 function everyoneIsOdd(numbers) {
-  const oddNumbers = numbers.filter(number => number % 2 !== 0)
-  // const oddNumbersTrue = numbers.map(number )
-  console.log(oddNumbers)
+  const oddNumbers = numbers.every(number => number % 2 !== 0)
+  return oddNumbers
 }
 
 /*
