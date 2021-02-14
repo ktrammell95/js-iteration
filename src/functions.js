@@ -85,11 +85,10 @@ function onlyTheEvenSurvive(numbers) {
  *
  */
 
-// function onlyTheEvenIndexedSurvive(numbers) {
-//   const evenNumberIndexes = numbers.map(number => number.index % 2 === 0)
-//   console.log(evenNumberIndexes)
-//   return evenNumberIndexes
-// }
+function onlyTheEvenIndexedSurvive(numbers) {
+  const evenNumberIndexes = numbers.filter((number, index) => index % 2 === 0)
+  return evenNumberIndexes
+}
 
 /*
  * 6)  Define a function bestMoviesOfTheYear that accepts an array of
@@ -125,7 +124,11 @@ function bestMoviesOfTheYear(movies, year) {
  *
  */
 
-// ...
+function everyoneIsOdd(numbers) {
+  const oddNumbers = numbers.filter(number => number % 2 !== 0)
+  // const oddNumbersTrue = numbers.map(number )
+  console.log(oddNumbers)
+}
 
 /*
  * 8) Define a function findTheNeedle that accepts an array of
