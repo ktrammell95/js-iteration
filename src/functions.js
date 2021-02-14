@@ -85,7 +85,11 @@ function onlyTheEvenSurvive(numbers) {
  *
  */
 
-// ...
+// function onlyTheEvenIndexedSurvive(numbers) {
+//   const evenNumberIndexes = numbers.map(number => number.index % 2 === 0)
+//   console.log(evenNumberIndexes)
+//   return evenNumberIndexes
+// }
 
 /*
  * 6)  Define a function bestMoviesOfTheYear that accepts an array of
@@ -104,7 +108,13 @@ function onlyTheEvenSurvive(numbers) {
  *
  */
 
-// ...
+function bestMoviesOfTheYear(movies, year) {
+  const findMovies = movies.filter(
+    movie => movie.year === year && movie.score > 90
+  )
+  const movieSelected = findMovies.map(movie => movie.name)
+  return movieSelected
+}
 
 /*
  * 7) Define a function everyoneIsOdd that accepts an array of
