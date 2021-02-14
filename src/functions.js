@@ -170,7 +170,10 @@ function findTheNeedleIndex(sentence) {
  *
  */
 
-// ...
+function someoneToLove(words) {
+  const countCharacters = words.some(word => word.length === 4)
+  return countCharacters
+}
 
 /*
  * 11)  Define a function objectKeys that accepts an object of
