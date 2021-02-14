@@ -25,8 +25,15 @@
 
 // For this one, I'm giving you an example of defining a function.
 // For the rest, you'll be on your own.
+
+
 function yelling(words) {
-  // Your code here
+  words = 'now is the time';
+
+  const upperCase = words.toUpperCase();
+  const splitWords = upperCase.split(' ')
+  return(splitWords);
+
 }
 
 /**
@@ -39,7 +46,21 @@ function yelling(words) {
  *
  */
 
-// ...
+function doubleTrouble(array) {
+  let newArray = []
+  for (let index = 0; index < array.length; index++) {
+    const value = array[index]
+
+    const result = value * 2
+
+    newArray.push(result)
+  }
+    return newArray
+}
+
+const numbers = [2,3,9,0,-5] 
+doubleTrouble(numbers)
+
 
 /*
  * 3) Define a function stringyIndexes() that takes an array of
