@@ -26,14 +26,10 @@
 // For this one, I'm giving you an example of defining a function.
 // For the rest, you'll be on your own.
 
-
 function yelling(words) {
-  words = 'now is the time';
+  const upperCaseLetters = words.map(word => word.toUpperCase())
 
-  const upperCase = words.toUpperCase();
-  const splitWords = upperCase.split(' ')
-  return(splitWords);
-
+  return upperCaseLetters
 }
 
 /**
@@ -47,20 +43,10 @@ function yelling(words) {
  */
 
 function doubleTrouble(array) {
-  let newArray = []
-  for (let index = 0; index < array.length; index++) {
-    const value = array[index]
+  const newArray = array.map(array => array * 2)
 
-    const result = value * 2
-
-    newArray.push(result)
-  }
-    return newArray
+  return newArray
 }
-
-const numbers = [2,3,9,0,-5] 
-doubleTrouble(numbers)
-
 
 /*
  * 3) Define a function stringyIndexes() that takes an array of
@@ -71,7 +57,14 @@ doubleTrouble(numbers)
  *
  */
 
-// ...
+// function stringyIndexes(array) {
+//   const logSomeColor = function(currentColor, colorIndex) {
+//     console.log(`The color at index ${colorIndex} is ${currentColor}`)
+//   }
+// }
+
+// arrayOfStrings = ['How', 'now', 'brown', 'cow']
+// stringyIndexes(arrayOfStrings)
 
 /*
  * 4) Define a function onlyTheEvenSurvive that accepts an array of
